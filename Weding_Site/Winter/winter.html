@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h6 class="logo">Winter Photos</h6>
+        <div class="full-screen" id="fullScreenBox">
+            <img src="Pictures/p3.jpg" id="fullScreen">
+            <span onclick="closeFullScreen()">x</span>
+        </div>
+    <div class="img-gall">
+        <img src="Pictures/p3.jpg" onclick="openFullScreen(this.src)">
+        <img src="Pictures/p4.webp" onclick="openFullScreen(this.src)">
+        <img src="Pictures/p11.jpg" onclick="openFullScreen(this.src)">
+        <img src="Pictures/p2.webp" onclick="openFullScreen(this.src)">
+        <img src="Pictures/p1.jpg" onclick="openFullScreen(this.src)">
+        <img src="Pictures/p5.jpg" onclick="openFullScreen(this.src)">
+        <img src="Pictures/p6.jpg" onclick="openFullScreen(this.src)">
+        <img src="Pictures/p7.jpg" onclick="openFullScreen(this.src)">
+        <img src="Pictures/p8.jpg" onclick="openFullScreen(this.src)">
+        <img src="Pictures/p9.jpeg" onclick="openFullScreen(this.src)">
+        <img src="Pictures/p12.jpg" onclick="openFullScreen(this.src)">
+        <img src="Pictures/p10.jpg" onclick="openFullScreen(this.src)">
+    </div>
+<script>
+    var fullScreenBox = document.getElementById("fullScreenBox");
+    var fullScreen = document.getElementById("fullScreen");
+
+    function openFullScreen(pho){
+        fullScreenBox.style.display = "flex";
+        fullScreen.src = pho;
+    }
+    function closeFullScreen(){
+        fullScreenBox.style.display = "none";
+    }
+</script>
+</body>
+</html>

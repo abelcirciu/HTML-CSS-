@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h6 class="logo">Spring Photos</h6>
+        <div class="full-screen" id="fullScreenBox">
+            <img src="Pictures/pic-1.jpeg" id="fullScreen">
+            <span onclick="closeFullScreen()">x</span>
+        </div>
+    <div class="img-gall">
+        <img src="Pictures/pic-1.jpeg" onclick="openFullScreen(this.src)">
+        <img src="Pictures/pic-6.jpg" onclick="openFullScreen(this.src)">
+        <img src="Pictures/pic-2.jpg" onclick="openFullScreen(this.src)">
+        <img src="Pictures/pic-3.jpg" onclick="openFullScreen(this.src)">
+        <img src="Pictures/pic-4.jpg" onclick="openFullScreen(this.src)">
+        <img src="Pictures/pic-9.webp" onclick="openFullScreen(this.src)">
+        <img src="Pictures/pic-5.jpeg" onclick="openFullScreen(this.src)">
+        <img src="Pictures/pic-7.jpg" onclick="openFullScreen(this.src)">
+        <img src="Pictures/pic-8.jpg" onclick="openFullScreen(this.src)">
+        <img src="Pictures/pic-10.jpg" onclick="openFullScreen(this.src)">
+        <img src="Pictures/pic-11.jpg" onclick="openFullScreen(this.src)">
+        <img src="Pictures/pic-12.jpg" onclick="openFullScreen(this.src)">
+    </div>
+<script>
+    var fullScreenBox = document.getElementById("fullScreenBox");
+    var fullScreen = document.getElementById("fullScreen");
+
+    function openFullScreen(pho){
+        fullScreenBox.style.display = "flex";
+        fullScreen.src = pho;
+    }
+    function closeFullScreen(){
+        fullScreenBox.style.display = "none";
+    }
+</script>
+</body>
+</html>
